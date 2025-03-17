@@ -14,10 +14,10 @@ from ctypes import c_int, c_void_p
 sys.settrace(None)
 sys.setprofile(None)
 
-#cái này là chạy ẩn console, nếu muốn chạy ẩn thì mở ra.
-#def hide_console():
-#    if os.name == 'nt':  # Chỉ áp dụng trên Windows
-#        ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 0)
+
+def hide_console():
+    if os.name == 'nt':  # Chỉ áp dụng trên Windows
+        ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 0)
         
 # Phát hiện môi trường bất thường
 def detect_advanced_environment():
