@@ -82,7 +82,7 @@ def apply_anti_reverse():
     try:
         hide_console()
         detect_advanced_environment()
-        self_mutate_bytecode()
+        #self_mutate_bytecode()
         stack_corruption()
         memory_noise()
     except Exception:
